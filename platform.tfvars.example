@@ -1,0 +1,41 @@
+################################
+# ACS Orchestrastion Platform Deployment Template
+#
+
+###
+# Required
+azure_subscription_id       = "<AZURE-SUBSCRIPTION-ID>"
+azure_tenant_id             = "<AZURE-TENANT-ID>"
+azure_client_id             = "<AZURE-CLIENT-ID>"
+azure_client_secret         = "<AZURE-CLIENT-SECRET>"
+
+orchestration_platform      = "<AZURE-ACS-PLATFORM>"
+
+dns_prefix                  = "<DNS-PREFIX>"
+ssh_key                     = "<SSH-PUBLIC-KEY>"
+
+###
+# Optionals
+
+# general
+azure_location              = "<AZURE-REGION>"
+cluster_name                = "<CLUSTER-NAME>"
+resource_group_name         = "<AZURE-RESOURCE-GROUP>"
+deployment_profile          = "<DEPLOYMENT-PROFILE>"
+
+# network configuration
+virtual_network_name        = "<VIRTUAL-NETWORK-NAME>"
+cidr                        = "<CIDR>"
+cidr_subnet                 = "<SUBNET-CIDR>"
+
+# service configuration
+vm_size                     = "<VM-SIZE>"
+
+master_vm_count             = <MASTER-VM-COUNT>
+first_master_ip             = "<FIRST-MASTER-IP>"
+
+worker_vm_count             = <WORKER-VM-COUNT>
+
+admin_user                  = "<ADMIN-USER>"
+
+diagnostics_profile_enabled = "<DIAGNOSTIC-PROFILE-ENABLED>"

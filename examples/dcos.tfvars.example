@@ -1,0 +1,41 @@
+################################
+# DCOS Deployment Example
+#
+
+###
+# Required
+azure_subscription_id       = "<AZURE-SUBSCRIPTION-ID>"
+azure_tenant_id             = "<AZURE-TENANT-ID>"
+azure_client_id             = "<AZURE-CLIENT-ID>"
+azure_client_secret         = "<AZURE-CLIENT-SECRET>"
+
+orchestration_platform      = "DCOS"
+
+dns_prefix                  = "<DNS-PREFIX>"
+ssh_key                     = "<SSH-PUBLIC-KEY>"
+
+###
+# Optionals
+
+# general
+azure_location              = "North Europe"
+cluster_name                = "DCOSCluster"
+resource_group_name         = "DCOSRG"
+deployment_profile          = "Research"
+
+# network configuration
+virtual_network_name        = "dcos_net"
+cidr                        = "169.100.0.0/16"
+cidr_subnet                 = "169.100.10.0/24"
+
+# service configuration
+vm_size                     = "Standard_A2"
+
+master_vm_count             = 1
+first_master_ip             = "169.100.10.1"
+
+worker_vm_count             = 3
+
+admin_user                  = "dcosuser"
+
+diagnostics_profile_enabled = "False"

@@ -1,0 +1,10 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform
+.info
